@@ -90,7 +90,7 @@ p {
     color: var(--font-color1);
 }
 
-.rating-button:active {
+.rating-button:focus {
     background-color: var(--primary-color);
     color: var(--font-color1);
 }

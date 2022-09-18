@@ -1,0 +1,124 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+
+    --primary-color: hsl(25, 97%, 53%);
+    --bg-color: hsl(216, 12%, 8%);
+    --card-color: hsl(213, 19%, 14%);
+    --button-color: hsl(212, 17%, 20%);
+    --button-hover-color: hsl(216, 12%, 54%);
+    --font-color1: white;
+    --font-color2: hsl(217, 12%, 63%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+main {
+    background-color: var(--card-color);
+    border-radius: 25px;
+}
+
+section {
+    padding: 2em;
+    max-width: 25em;
+}
+
+#star {
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    border-radius: 999px;
+    aspect-ratio: 1/1;
+    padding: 1em;
+}
+
+#result {
+    color: var(--primary-color);
+    background-color: var(--button-color);
+    padding: 1em;
+    border-radius: 999px;
+    display: initial;
+}
+
+h1 {
+    color: var(--font-color1);
+}
+
+p {
+    color: var(--font-color2);
+    line-height: 1.6em;
+    margin-bottom: 2em;
+}
+
+#rating-button-set {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.rating-button {
+    background-color: var(--button-color);
+    color: var(--font-color2);
+    border: none;
+    border-radius: 999px;
+    width: 50px;
+    aspect-ratio: 1/1;
+    transition: background-color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+
+.rating-button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--font-color1);
+}
+
+.rating-button:active {
+    background-color: var(--primary-color);
+    color: var(--font-color1);
+}
+
+#submit {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: var(--primary-color);
+    color: var(--font-color1);
+    border-radius: 40px;
+    transition: background-color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+
+#submit:hover {
+    background-color: var(--font-color1);
+    color: var(--primary-color);
+}
+
+#thank-you {
+    display: grid;
+    place-items: center;
+}
+
+#thank-you > p {
+    text-align: center;
+}
